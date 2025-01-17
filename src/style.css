@@ -48,3 +48,41 @@ h1, h2, h3, h4, h5, h6 {
     --bg-dark: #881337;
     ---bg-very-dark: #4c0519;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 50rem;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-dark);
+  height: 5.5rem;
+}
+
+.logo {
+  width: auto;
+  height: 5.5rem;
+}
+
+nav {
+  margin-left: 2rem;
+}
+
+.nav-button {
+  cursor: pointer;
+  background-color: var(---bg-dark);
+  color: white;
+  border: none;
+  width: 7rem;
+  height: 5.5rem;
+  font-size: 1.5rem;
+}
+
+.nav-button:hover {
+  background-color: var(--very-dark-rose);
+}
