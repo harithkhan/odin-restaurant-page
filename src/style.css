@@ -1,0 +1,50 @@
+/* CSS Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*Reset Over */
+/* General Styling */
+
+:root {
+    --very-light-rose: #fda4af;
+    --light-rose: #fb7185;
+    --rose: #f43f5e;
+    --dark-rose: #e11d48;
+    --very-dark-rose: #be123c;
+    --bg-dark: #881337;
+    ---bg-very-dark: #4c0519;
+}
