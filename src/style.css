@@ -187,3 +187,23 @@ nav {
 .cta-button:hover {
   background-color: var(--bg-dark);
 }
+
+.hero-img-credit {
+  position: absolute;
+  color: white;
+  justify-self: center;
+  bottom: 0.5rem;
+  font-size: 0.8rem;
+  margin-right: 16rem;
+}
+
+.hero-img-credit a {
+  color: var(--rose);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+}
+
+.hero-img-credit a:hover {
+  color: var(--light-rose);
+}
