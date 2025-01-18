@@ -12,7 +12,6 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: "EB Garamond", "Cormorant Garamond", "Lora", 'Times New Roman', Times, serif;
 }
 
 img, picture, video, canvas, svg {
@@ -43,19 +42,21 @@ h1, h2, h3, h4, h5, h6 {
 /* General Styling */
 
 :root {
-    --very-light-rose: #fda4af;
-    --light-rose: #fb7185;
-    --rose: #f43f5e;
-    --dark-rose: #e11d48;
-    --very-dark-rose: #be123c;
-    --bg-dark: #881337;
-    --bg-very-dark: #4c0519;
+  --white-rose: #ffe4e6;
+  --very-light-rose: #fda4af;
+  --light-rose: #fb7185;
+  --rose: #f43f5e;
+  --dark-rose: #e11d48;
+  --very-dark-rose: #be123c;
+  --bg-dark: #881337;
+  --bg-very-dark: #4c0519;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-width: 80rem;
+  font-family: "EB Garamond", "Cormorant Garamond", "Lora", 'Times New Roman', Times, serif;
 }
 
 /* Header */
@@ -269,4 +270,38 @@ nav {
 .customer-review {
   line-height: 1.2;
   margin-left: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  height: 4rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-dark);
+}
+
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--white-rose);
+  transition: color 0.3s ease; 
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: var(--bg-very-dark);
+  }
+
+.credit img {
+  height: 1.2rem;
+  width: 1.2rem;
 }
