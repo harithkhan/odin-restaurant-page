@@ -103,12 +103,14 @@ nav {
   background-color: var(--very-dark-rose);
 }
 
-/* Content */
+/* Content - Home */
 
 #content {
   display: flex;
   flex-direction: column;
 }
+
+/* Content - Home - Hero */
 
 .hero-container {
   width: 100%;
@@ -133,7 +135,7 @@ nav {
   z-index: 1;
   width: 30rem;
   background-color: white;
-  border: 1px solid black;
+  border: none;
   grid-column: 2 / -1;
   border-radius: 25px;
   padding: 1.5rem;
@@ -206,4 +208,45 @@ nav {
 
 .hero-img-credit a:hover {
   color: var(--light-rose);
+}
+
+/* Content - Home - Review */
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.review-header {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.customer-container {
+  display: grid;
+  grid-template: 1fr 3fr / 1fr 4fr;
+  width: 40rem;
+  padding: 1rem;
+  border: 2px solid var(--rose);
+  border-radius: 25rem;
+}
+
+.customer-img {
+  grid-area: 1 / 1 / -1 / 2;
+  width: 7rem;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.customer-review {
+  line-height: 1.2;
+  margin-left: 1rem;
 }
