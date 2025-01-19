@@ -1,8 +1,10 @@
 import menuDivederPath from "./img/menu/divider.png";
+import foodImgOnePath from "./img/menu/oyster.png";
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
-    
+
+    //Menu Header    
     const menuContainer = document.createElement("div");
     menuContainer.className = "menu-container";
     contentDiv.appendChild(menuContainer);
@@ -35,4 +37,48 @@ export function getMenuPage() {
     menuBottomDivider.src = menuDivederPath;
     menuBottomDivider.className = "menu-divider";
     menuHeader.appendChild(menuBottomDivider);
+
+    //Menu food containers
+    const foodContainerOne = document.createElement("div");
+    const foodContainerTwo = document.createElement("div");
+    const foodContainerThree = document.createElement("div");
+    const foodContainerFour = document.createElement("div");
+    const foodContainerFive = document.createElement("div");
+    const foodContainerSix = document.createElement("div");
+
+    foodContainerOne.className = "food-container";
+    foodContainerTwo.className = "food-container";
+    foodContainerThree.className = "food-container";
+    foodContainerFour.className = "food-container";
+    foodContainerFive.className = "food-container";
+    foodContainerSix.className = "food-container";
+
+    menuContainer.appendChild(foodContainerOne);
+    menuContainer.appendChild(foodContainerTwo);
+    menuContainer.appendChild(foodContainerThree);
+    menuContainer.appendChild(foodContainerFour);
+    menuContainer.appendChild(foodContainerFive);
+    menuContainer.appendChild(foodContainerSix);
+
+    //Menu Container One
+    const foodHeaderOne = document.createElement("h3");
+    foodHeaderOne.className = "food-header";
+    foodHeaderOne.textContent = "Oysters with apple & horseradish dressing";
+
+    const foodPriceOne = document.createElement("p");
+    foodPriceOne.className = "food-price";
+    foodPriceOne.textContent = "RM69.69";
+
+    const foodTextOne = document.createElement("p");
+    foodTextOne.className = "food-text";
+    foodTextOne.textContent = "Apple and horseradish dressing drizzled over oysters for a sophisticated seafood starter to share. Served on a bed of ice or rock salt with sprigs of dill."
+
+    const foodImgOne = document.createElement("img");
+    foodImgOne.src = foodImgOnePath;
+    foodImgOne.className = "food-img";
+
+    foodContainerOne.appendChild(foodHeaderOne);
+    foodContainerOne.appendChild(foodPriceOne);
+    foodContainerOne.appendChild(foodTextOne);
+    foodContainerOne.appendChild(foodImgOne);
 };
