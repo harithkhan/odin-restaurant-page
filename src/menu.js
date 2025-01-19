@@ -5,6 +5,7 @@ import foodImgThreePath from "./img/menu/salad.png";
 import foodImgFourPath from "./img/menu/pappardelle.png";
 import foodImgFivePath from "./img/menu/tartine.png";
 import foodImgSixPath from "./img/menu/chocolate.png";
+import footerIconPath from "./img/github-icon.png";
 
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
@@ -259,4 +260,21 @@ export function getMenuPage() {
     beverageMenuContainer.appendChild(beverageHeader);
     beverageMenuContainer.appendChild(beverageText);
     beverageMenuContainer.appendChild(beveragePrices);
+
+    // Footer
+    const footer = document.createElement("footer");
+    const pageCredit = document.createElement("div");
+    pageCredit.className = "credit";
+    pageCredit.textContent = "Created by";
+    footer.appendChild(pageCredit);
+
+    const creditLink = document.createElement("a");
+    creditLink.href = "https://github.com/harithkhan";
+    creditLink.textContent = "Harith Khan";
+    const githubIcon = document.createElement("img");
+    githubIcon.src = footerIconPath;
+    pageCredit.appendChild(creditLink);
+    pageCredit.appendChild(githubIcon);
+
+    contentDiv.appendChild(footer);
 };
