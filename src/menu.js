@@ -197,4 +197,44 @@ export function getMenuPage() {
     foodContainerSix.appendChild(foodPriceSix);
     foodContainerSix.appendChild(foodTextSix);
     foodContainerSix.appendChild(foodImgSix);
+
+    //Menu Misc Container 
+    const menuMiscContainer = document.createElement("div");
+    menuMiscContainer.className = "menu-misc-container";
+    menuContainer.appendChild(menuMiscContainer);
+
+    const menuDividerThree = document.createElement("img");
+    menuDividerThree.src = menuDivederPath;
+    menuDividerThree.className = "menu-divider-bottom";
+    menuMiscContainer.appendChild(menuDividerThree);
+
+    //Alcohol & Beverage Menu Containers
+    const alcoholMenuContainer = document.createElement("div");
+    alcoholMenuContainer.className = "alcohol-menu-container";
+    const beverageMenuContainer = document.createElement("div");
+    beverageMenuContainer.className = "beverage-menu-container";
+    menuMiscContainer.appendChild(alcoholMenuContainer);
+    menuMiscContainer.appendChild(beverageMenuContainer);
+
+    //Alcohol Menu Contents
+    const alcoholHeader = document.createElement("h3");
+    alcoholHeader.className = "food-header";
+    alcoholHeader.textContent = "Alcohol (min. spend RM300)";
+
+    const alcoholText = document.createElement("p");
+    alcoholText.className = "alcohol-text";
+    alcoholText.textContent = "House Pour Red\n" +
+        "House Pour White\n" + 
+        "Château Margaux (France - Red Wine)\n" + 
+        "Domaine de la Romanée-Conti (France - Pinot Noir)\n" + 
+        "Opus One (Napa Valley, USA - Cabernet Sauvignon)\n" + 
+        "Veuve Clicquot La Grande Dame (Champagne, France)";
+
+    const alcoholPrices = document.createElement("p");
+    alcoholPrices.className = "alcohol-prices";
+    alcoholPrices.textContent = "RM182\nRM182\nRM203\nRM203\nRM399\nRM499"
+
+    alcoholMenuContainer.appendChild(alcoholHeader);
+    alcoholMenuContainer.appendChild(alcoholText);
+    alcoholMenuContainer.appendChild(alcoholPrices);
 };
