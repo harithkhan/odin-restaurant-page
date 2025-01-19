@@ -331,6 +331,8 @@ nav {
 .food-text {
   line-height: 1;
   grid-area: 3 / 1 / 4 / 2;
+  font-size: 0.8rem;
+  padding-right: 0.3rem;
 }
 
 .food-img {

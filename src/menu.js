@@ -1,6 +1,7 @@
 import menuDivederPath from "./img/menu/divider.png";
 import foodImgOnePath from "./img/menu/oyster.png";
 import foodImgTwoPath from "./img/menu/prawn.png";
+import foodImgThreePath from "./img/menu/salad.png";
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
@@ -104,4 +105,26 @@ export function getMenuPage() {
     foodContainerTwo.appendChild(foodPriceTwo);
     foodContainerTwo.appendChild(foodTextTwo);
     foodContainerTwo.appendChild(foodImgTwo);
+
+    // Menu Container Three
+    const foodHeaderThree = document.createElement("h3");
+    foodHeaderThree.className = "food-header";
+    foodHeaderThree.textContent = "Beetroot & halloumi salad";
+
+    const foodPriceThree = document.createElement("p");
+    foodPriceThree.className = "food-price";
+    foodPriceThree.textContent = "RM38.99";
+
+    const foodTextThree = document.createElement("p");
+    foodTextThree.className = "food-text";
+    foodTextThree.textContent = "Salad with three of your 5-a-day. Halloumi with juicy pomegranate seeds and the crunch of pumpkin seeds is a moreish combination. As usual, to share.";
+
+    const foodImgThree = document.createElement("img");
+    foodImgThree.src = foodImgThreePath;
+    foodImgThree.className = "food-img";
+
+    foodContainerThree.appendChild(foodHeaderThree);
+    foodContainerThree.appendChild(foodPriceThree);
+    foodContainerThree.appendChild(foodTextThree);
+    foodContainerThree.appendChild(foodImgThree);
 };
