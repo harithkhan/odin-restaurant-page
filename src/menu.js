@@ -237,4 +237,26 @@ export function getMenuPage() {
     alcoholMenuContainer.appendChild(alcoholHeader);
     alcoholMenuContainer.appendChild(alcoholText);
     alcoholMenuContainer.appendChild(alcoholPrices);
+
+    //Beverage Menu Contents
+    const beverageHeader = document.createElement("h3");
+    beverageHeader.className = "bev-header";
+    beverageHeader.textContent = "Beverages";
+
+    const beverageText = document.createElement("p");
+    beverageText.className = "bev-text";
+    beverageText.textContent = "Pellegrino\n" +
+        "Espresso(Double)\n" +
+        "Redbull\n" +
+        "Monster\n" +
+        "100 Plus\n" +
+        "Revive\n";
+    
+    const beveragePrices = document.createElement("p");
+    beveragePrices.className = "alcohol-prices";
+    beveragePrices.textContent = "RM24\nRM24\nRM24\nRM24\nRM24\nRM24\n"
+
+    beverageMenuContainer.appendChild(beverageHeader);
+    beverageMenuContainer.appendChild(beverageText);
+    beverageMenuContainer.appendChild(beveragePrices);
 };
