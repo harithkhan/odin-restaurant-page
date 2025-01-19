@@ -1,5 +1,6 @@
 import menuDivederPath from "./img/menu/divider.png";
 import foodImgOnePath from "./img/menu/oyster.png";
+import foodImgTwoPath from "./img/menu/prawn.png";
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
@@ -81,4 +82,26 @@ export function getMenuPage() {
     foodContainerOne.appendChild(foodPriceOne);
     foodContainerOne.appendChild(foodTextOne);
     foodContainerOne.appendChild(foodImgOne);
+
+    //Menu Container Two
+    const foodHeaderTwo = document.createElement("h3");
+    foodHeaderTwo.className = "food-header";
+    foodHeaderTwo.textContent = "Chilli prawn & broccoli stir-fry";
+
+    const foodPriceTwo = document.createElement("p");
+    foodPriceTwo.className = "food-price";
+    foodPriceTwo.textContent = "RM48.99";
+
+    const foodTextTwo = document.createElement("p");
+    foodTextTwo.className = "food-text";
+    foodTextTwo.textContent = "Stir-fry with ginger, sesame and chilli prawns to share. Low in fat but high in passion and taste.";
+
+    const foodImgTwo = document.createElement("img");
+    foodImgTwo.src = foodImgTwoPath;
+    foodImgTwo.className = "food-img";
+
+    foodContainerTwo.appendChild(foodHeaderTwo);
+    foodContainerTwo.appendChild(foodPriceTwo);
+    foodContainerTwo.appendChild(foodTextTwo);
+    foodContainerTwo.appendChild(foodImgTwo);
 };
