@@ -3,6 +3,9 @@ import foodImgOnePath from "./img/menu/oyster.png";
 import foodImgTwoPath from "./img/menu/prawn.png";
 import foodImgThreePath from "./img/menu/salad.png";
 import foodImgFourPath from "./img/menu/pappardelle.png";
+import foodImgFivePath from "./img/menu/tartine.png";
+import foodImgSixPath from "./img/menu/chocolate.png";
+
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
@@ -150,4 +153,48 @@ export function getMenuPage() {
     foodContainerFour.appendChild(foodPriceFour);
     foodContainerFour.appendChild(foodTextFour);
     foodContainerFour.appendChild(foodImgFour);
+
+    //Menu Container Five
+    const foodHeaderFive = document.createElement("h3");
+    foodHeaderFive.className = "food-header";
+    foodHeaderFive.textContent = "Fig, Burrata & Prosciutto Tartine";
+
+    const foodPriceFive = document.createElement("p");
+    foodPriceFive.className = "food-price";
+    foodPriceFive.textContent = "RM57.99";
+
+    const foodTextFive = document.createElement("p");
+    foodTextFive.className = "food-text";
+    foodTextFive.textContent = "Rustic sourdough tartines layered with creamy burrata, sweet figs, and savory prosciutto, delivering a perfect balance of flavors in every bite. An effortlessly elegant choice for date night.";
+
+    const foodImgFive = document.createElement("img");
+    foodImgFive.src = foodImgFivePath;
+    foodImgFive.className = "food-img";
+
+    foodContainerFive.appendChild(foodHeaderFive);
+    foodContainerFive.appendChild(foodPriceFive);
+    foodContainerFive.appendChild(foodTextFive);
+    foodContainerFive.appendChild(foodImgFive);
+
+    //Menu Container Six
+    const foodHeaderSix = document.createElement("h3");
+    foodHeaderSix.className = "food-header";
+    foodHeaderSix.textContent = "Chocolate Ganache with Sea Salt & Toast";
+
+    const foodPriceSix = document.createElement("p");
+    foodPriceSix.className = "food-price";
+    foodPriceSix.textContent = "RM38.99";
+
+    const foodTextSix = document.createElement("p");
+    foodTextSix.className = "food-text";
+    foodTextSix.textContent = "Silky smooth chocolate ganache, with crisp ciabatta toasts and a sprinkle of sea salt makes for a chic and ultra-indulgent date night dessert.";
+
+    const foodImgSix = document.createElement("img");
+    foodImgSix.src = foodImgSixPath;
+    foodImgSix.className = "food-img";
+
+    foodContainerSix.appendChild(foodHeaderSix);
+    foodContainerSix.appendChild(foodPriceSix);
+    foodContainerSix.appendChild(foodTextSix);
+    foodContainerSix.appendChild(foodImgSix);
 };
