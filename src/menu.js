@@ -242,12 +242,12 @@ export function getMenuPage() {
     //Beverage Menu Contents
     const beverageHeader = document.createElement("h3");
     beverageHeader.className = "bev-header";
-    beverageHeader.textContent = "Beverages";
+    beverageHeader.textContent = "Beverages To Keep You Going";
 
     const beverageText = document.createElement("p");
     beverageText.className = "bev-text";
     beverageText.textContent = "Pellegrino\n" +
-        "Espresso(Double)\n" +
+        "Espresso (Double)\n" +
         "Redbull\n" +
         "Monster\n" +
         "100 Plus\n" +
