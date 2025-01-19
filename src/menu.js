@@ -2,6 +2,7 @@ import menuDivederPath from "./img/menu/divider.png";
 import foodImgOnePath from "./img/menu/oyster.png";
 import foodImgTwoPath from "./img/menu/prawn.png";
 import foodImgThreePath from "./img/menu/salad.png";
+import foodImgFourPath from "./img/menu/pappardelle.png";
 export function getMenuPage() {
     const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = "";
@@ -65,7 +66,7 @@ export function getMenuPage() {
     //Menu Container One
     const foodHeaderOne = document.createElement("h3");
     foodHeaderOne.className = "food-header";
-    foodHeaderOne.textContent = "Oysters with apple & horseradish dressing";
+    foodHeaderOne.textContent = "Oysters with Apple & Horseradish Dressing";
 
     const foodPriceOne = document.createElement("p");
     foodPriceOne.className = "food-price";
@@ -87,7 +88,7 @@ export function getMenuPage() {
     //Menu Container Two
     const foodHeaderTwo = document.createElement("h3");
     foodHeaderTwo.className = "food-header";
-    foodHeaderTwo.textContent = "Chilli prawn & broccoli stir-fry";
+    foodHeaderTwo.textContent = "Chilli Prawn & Broccoli Stir-Fry";
 
     const foodPriceTwo = document.createElement("p");
     foodPriceTwo.className = "food-price";
@@ -109,7 +110,7 @@ export function getMenuPage() {
     // Menu Container Three
     const foodHeaderThree = document.createElement("h3");
     foodHeaderThree.className = "food-header";
-    foodHeaderThree.textContent = "Beetroot & halloumi salad";
+    foodHeaderThree.textContent = "Beetroot & Halloumi Salad";
 
     const foodPriceThree = document.createElement("p");
     foodPriceThree.className = "food-price";
@@ -127,4 +128,26 @@ export function getMenuPage() {
     foodContainerThree.appendChild(foodPriceThree);
     foodContainerThree.appendChild(foodTextThree);
     foodContainerThree.appendChild(foodImgThree);
+
+    //Menu Container Four
+    const foodHeaderFour = document.createElement("h3");
+    foodHeaderFour.className = "food-header";
+    foodHeaderFour.textContent = "Crab & Asparagus Pappardelle";
+
+    const foodPriceFour = document.createElement("p");
+    foodPriceFour.className = "food-price";
+    foodPriceFour.textContent = "RM69.69";
+
+    const foodTextFour = document.createElement("p");
+    foodTextFour.className = "food-text";
+    foodTextFour.textContent = "Crab served with fresh egg pappardelle and rocket salad. Gloves provided so you two can get as dirty as you want. Crab breaking services not provided, you can do that for her, Mr. Macho man.";
+
+    const foodImgFour = document.createElement("img");
+    foodImgFour.src = foodImgFourPath;
+    foodImgFour.className = "food-img";
+
+    foodContainerFour.appendChild(foodHeaderFour);
+    foodContainerFour.appendChild(foodPriceFour);
+    foodContainerFour.appendChild(foodTextFour);
+    foodContainerFour.appendChild(foodImgFour);
 };
