@@ -433,6 +433,7 @@ nav {
   display: grid;
   grid-template-columns: 30rem 30rem;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .chef-text-container {

@@ -1,5 +1,6 @@
 import aboutRestaurantImgPath from "./img/about/about-restaurant.png";
 import chefImgPath from "./img/about/chef.png";
+import footerIconPath from "./img/github-icon.png";
 
 export function getAboutPage() {
     const contentDiv = document.getElementById("content");
@@ -39,4 +40,21 @@ export function getAboutPage() {
 
     chefContainer.appendChild(chefTextContainer);
     chefContainer.appendChild(chefImg);
+
+    // Footer
+        const footer = document.createElement("footer");
+        const pageCredit = document.createElement("div");
+        pageCredit.className = "credit";
+        pageCredit.textContent = "Created by";
+        footer.appendChild(pageCredit);
+    
+        const creditLink = document.createElement("a");
+        creditLink.href = "https://github.com/harithkhan";
+        creditLink.textContent = "Harith Khan";
+        const githubIcon = document.createElement("img");
+        githubIcon.src = footerIconPath;
+        pageCredit.appendChild(creditLink);
+        pageCredit.appendChild(githubIcon);
+    
+        contentDiv.appendChild(footer);
 };
