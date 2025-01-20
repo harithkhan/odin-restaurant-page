@@ -47,19 +47,21 @@ export function getAboutPage() {
     dividerMid.className = "divider-about";
     dividerMid.src = aboutDividerPath;
 
+    aboutTextHeaderContainer.appendChild(dividerTop);
+    aboutTextHeaderContainer.appendChild(aboutTextHeader);
+    aboutTextHeaderContainer.appendChild(dividerMid);
+    aboutTextContainer.appendChild(aboutTextHeaderContainer);
+
+    // About Text
     const aboutText = document.createElement("p");
     aboutText.className = "about-text";
     aboutText.textContent = "Discover a date night like no other. At The Flaming Oyster, we craft an unforgettable dining experience that eliminates the guesswork of planning the perfect evening. Relax and let us handle every detail while you focus on what truly matters – her.\n\n" + 
     "Our menu is a feast for the senses, featuring dishes that are not only visually stunning but infused with aphrodisiac ingredients to set the mood. Paired with soft lighting, a romantic color palette, and the soothing sounds of jazz, passion will fill the air.\n\n" + 
     "Every moment at The Flaming Oyster is designed to inspire connection and romance. From the warm welcome at the door to the attentive service throughout your meal, we strive to make your evening magical.";
 
-    aboutTextHeaderContainer.appendChild(dividerTop);
-    aboutTextHeaderContainer.appendChild(aboutTextHeader);
-    aboutTextHeaderContainer.appendChild(dividerMid);
-    aboutTextHeaderContainer.appendChild(aboutText);
-    aboutTextContainer.appendChild(aboutTextHeaderContainer);
+    aboutTextContainer.appendChild(aboutText);
 
-    //Chef container
+    //Chef Container
     const chefTextContainer = document.createElement("div");
     chefTextContainer.className = "chef-text-container";
 
@@ -69,6 +71,36 @@ export function getAboutPage() {
 
     chefContainer.appendChild(chefTextContainer);
     chefContainer.appendChild(chefImg);
+
+    //Chef Header Container
+    const chefHeaderContainer = document.createElement("div");
+    chefHeaderContainer.className = "about-text-header-container";
+
+    const dividerTopChef = document.createElement("img");
+    dividerTopChef.className = "divider-about";
+    dividerTopChef.src = aboutDividerPath;
+
+    const chefHeader = document.createElement("h2");
+    chefHeader.className = "about-text-header";
+    chefHeader.textContent = "Chemistry Chef";
+
+    const dividerMidChef = document.createElement("img");
+    dividerMidChef.className = "divider-about";
+    dividerMidChef.src = aboutDividerPath;
+
+    chefHeaderContainer.appendChild(dividerTopChef);
+    chefHeaderContainer.appendChild(chefHeader);
+    chefHeaderContainer.appendChild(dividerMidChef);
+    chefTextContainer.appendChild(chefHeaderContainer);
+
+    //Chef Text
+    const chefText = document.createElement("p");
+    chefText.className = "about-text";
+    chefText.textContent = `Chef Harith Khan earned a PhD in Biochemistry from MIT, with a groundbreaking thesis titled "Aphrodisiac Foods and Their Potential to Improve Birthrates." His research has influenced global culinary trends and revitalized communities through the science of love on a plate.\n\n` +
+    "Inspired by his own love story, Chef Khan used his expertise to craft aphrodisiac meals for his then-girlfriend Taylor. The result? A whirlwind romance that led to a happy marriage, sealed by their shared passion for food and connection.\n\n" +
+    "Driven by his passion, Chef Khan perfected his craft at Le Cordon Bleu, earning the prestigious Grand Diplôme. Now, he brings the magic of his own love story to every couple dining at The Flaming Oyster.";
+
+    chefTextContainer.appendChild(chefText)
 
     // Footer
     const footer = document.createElement("footer");
