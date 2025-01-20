@@ -1,9 +1,9 @@
-import heroTransparent from "./img/hero-transparent.png";
-import kickerIconPath from "./img/stars-6.png";
-import jamesPath from "./img/asian-man.jpg";
-import stellaPath from "./img/asian-1.jpg";
-import dixonPath from "./img/white-man.jpg";
-import mingPath from "./img/asian-2.jpg";
+import heroTransparent from "./img/home/hero-transparent.png";
+import kickerIconPath from "./img/home/stars-6.png";
+import jamesPath from "./img/home/asian-man.jpg";
+import stellaPath from "./img/home/asian-1.jpg";
+import dixonPath from "./img/home/white-man.jpg";
+import mingPath from "./img/home/asian-2.jpg";
 import footerIconPath from "./img/github-icon.png";
 
 export function getHomePage() {
