@@ -119,7 +119,7 @@ export function getHomePage() {
 
     const customerOneReview = document.createElement("p");
     customerOneReview.className = "customer-review";
-    customerOneReview.textContent = "To be honest I just come here for the food, but every date I bring here seems to want to see me again. I tried going other places but then I didn't get any callbacks. If they closed down I would be single forever. The Flaming Oyster for life!";
+    customerOneReview.textContent = "To be honest I just come here for the food, but every date I bring here seems to want to see me again. I tried going other places but I wouldn't get any callbacks. If they closed down I would be single forever. The Flaming Oyster for life!";
 
     customerOneContainer.appendChild(customerOneImg);
     customerOneContainer.appendChild(customerOneName);
@@ -239,7 +239,7 @@ export function getHomePage() {
 
     const customerFourReview = document.createElement("p");
     customerFourReview.className = "customer-review";
-    customerFourReview.textContent = "I am marrying the guy on top. I thought he might be weird at first, but The Flaming Oyster helped me relax and then I was able to see the gem that was in front of me. I got some good photos out of it too!";
+    customerFourReview.textContent = "I was nervous to meet this guy at first, but The Flaming Oyster helped me relax and then I was able to enjoy the date. Attentive service, calming music, and THE FOOD! The food was something else. Seemed to give me so much energy! I think they must have put a love potion in my drink.";
 
     customerFourContainer.appendChild(customerFourImg);
     customerFourContainer.appendChild(customerFourName);
